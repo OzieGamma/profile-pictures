@@ -11,17 +11,53 @@
 }
 
 .human {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 96px;
+    width: 96px;
+    font-size: 12px;
     border-radius: 50%;
 }
 
 .bot-outer {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 96px;
+    width: 96px;
+    font-size: 12px;
     transform: rotate(-45deg);
 }
 
 .bot-inner {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 96px;
+    width: 96px;
+    font-size: 12px;
     transform: rotate(45deg);
 }
 
 .organization {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 96px;
+    width: 96px;
+    font-size: 12px;
     border-radius: 15%;
 }
