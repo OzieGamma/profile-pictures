@@ -1,0 +1,27 @@
+.picture {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 96px;
+    width: 96px;
+    font-size: 12px;
+}
+
+.human {
+    border-radius: 50%;
+}
+
+.bot-outer {
+    transform: rotate(-45deg);
+}
+
+.bot-inner {
+    transform: rotate(45deg);
+}
+
+.organization {
+    border-radius: 15%;
+}
