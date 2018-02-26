@@ -1,8 +1,68 @@
 <html>
     <head>
-        <link src="style.css" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Lato&amp;subset=latin-ext" rel="stylesheet">
+        <style>
+            body {
+                margin: 24px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                max-width: 800px;
+            }
+
+            body, button, input, optgroup, select, textarea {
+                font-family: 'Lato', sans-serif !important;
+            }
+
+            .human {
+                overflow: hidden;
+                height: 96px;
+                width: 96px;
+                border-radius: 50%;
+            }
+
+            .bot-outer {
+                overflow: hidden;
+                height: 96px;
+                width: 96px;
+                transform: rotate(45deg);
+                margin: auto;
+            }
+
+            .bot-inner {
+                background-color: gray;
+                overflow: hidden;
+                height: 96px;
+                width: 96px;
+                transform: rotate(-45deg);
+            }
+
+            .organization {
+                overflow: hidden;
+                height: 96px;
+                width: 96px;
+                border-radius: 15%;
+            }
+
+            .organization-member {
+                overflow: hidden;
+                height: 48px;
+                width: 48px;
+                border-radius: 15%;
+                margin-left: -36px;
+                margin-bottom: -12px;
+            }
+
+            .cared-of {
+                display: inline-block;
+                margin-right: -64px;
+                
+                z-index: 20;
+            }
+        </style>
     </head>
     <body>
+        <h2>Profile pictures for humans, organizations and bots</h2>
         <p>
             Profile pictures are an essential element of any social app. They are usually square or round. Together with user names they enable users to properly identify each other. Names alone can be ambiguous and profile pictures remove this ambiguity.
         </p>
@@ -10,14 +70,53 @@
             More and more users are bots or other non-humans (such as groups of people or companies). I believe users should be able to differentiate between speaking to a bot and another human. To convey this information, I suggest using profile picture shapes.
         </p>
         <h3>Human</h3>
-        <img src="pp.jpg" classname="human"></img>
+        <img src="pp.jpg" class="human"></img>
         
         <h3>Organization</h3>
-        <img src="pp.jpg" classname="organization"></img>
+        <img src="takeo-logo.png" class="organization"></img>
         
         <h3>Bot</h3>
-        <div classname="bot-outer">
-            <img src="robot.png" classname="bot-inner"></img>
+        <div class="bot-outer">
+            <img src="robot.png" class="bot-inner"></png>
         </div>
+
+        <h2>Combining them</h2>
+        Profile pictures don't need to be limited to humans, bots or organizations. 
+        The relationship between several users can be reflected in the profile picture. 
+        Two relations come to mind: <a href="https://en.wiktionary.org/wiki/care_of">care of</a> 
+        and membership of an organization. 
+
+        <h3>Member or an organization</h3>
+        <div class="member">
+            <img src="pp.jpg" class="human"></img>
+            <img src="takeo-logo.png" class="organization-member"></img>
+        </div>
+        <p>
+            This profile picture certifies I am a member of the Takeo organization. It also shows I
+            am contacting you as a member of that organization. An equivalent in the email world would be
+            a professional email address.
+        </p>
+
+        <h3>Care of</h3>
+        <div class="care-of">
+            <div class="cared-of">
+                <div class="bot-outer">
+                    <img src="robot.png" class="bot-inner"></img>
+                </div>
+            </div>
+            <img src="pp.jpg" class="human"></img>
+        </div>
+        <p>
+            I am talking in the name of the bot. This can be extremely usefull for secretaries or semi-automated processes (
+                the bot starts the conversation and calls a human when needed
+            )
+        </p>
+
+
+        <hr />
+        <p>
+            The designs explained in this document are the work of Antoine Boxho and Oswald Maskens and can be used
+            by anyone free of charge. If you do use them reach out! We're alsways curius to know.
+        </p>
     </body>
 </html>
